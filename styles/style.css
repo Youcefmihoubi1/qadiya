@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap');
+
+body {
+    font-family: 'Cairo', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2fdf3;
+    color: #222;
+    direction: rtl;
+    border-right: 0;
+
+    
+}
+header {
+    background: linear-gradient(to left, #2e7d32, #66bb6a);
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+header a h1 {
+    font-family: 'reem', sans-serif;
+    font-size: 2.5em;
+    margin: 0;
+    color: white;
+}
+
+header p {
+    font-size: 1.2em;
+    font-weight: normal;
+    margin-top: 10px;
+}
+nav {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav a:hover {
+    background-color: #388e3c;
+    color: #dcedc8;
+    transform: scale(1.1);
+}
+@font-face {
+    font-family: 'reem'; 
+    src: url('reem.ttf') format('truetype');
+}
+
+
+.sections h1 {
+    color: #388e3c;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, td, th {
+    border: 1px solid #81c784;
+    padding: 10px;
+    text-align: right;
+}
+
+thead {
+    background-color: #a5d6a7;
+}
+
+#footer {
+    background-color: #2e7d32;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    max-width: 100%;
+    border-radius: 8px;
+    border-right: 0;
+
+
+}
+
+#footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+#footer li {
+    display: inline;
+    margin: 0 10px;
+}
+
+#footer a {
+    color: #dcedc8;
+    text-decoration: none;
+}
+
+#footer a:hover {
+    text-decoration: underline;
+}
+
+#timeline {
+    background-color: #ffffff;
+    padding: 40px 20px;
+    direction: rtl;
+    text-align: right;
+    border-radius: 8px;
+    margin: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    font-family: 'Cairo', sans-serif;
+  }
+  
+  .timeline-title {
+    text-align: center;
+    font-size: 2em;
+    color: #388e3c;
+    margin-bottom: 40px;
+    font-weight: 700;
+  }
+  
+  .timeline-item {
+    position: relative;
+    margin-bottom: 30px;
+    padding-right: 20px;
+    border-right: 4px solid #2e7d32;
+    padding-bottom: 10px;
+  }
+  
+  .timeline-year {
+    font-weight: bold;
+    color: #2e7d32;
+    font-size: 1.2em;
+    margin-bottom: 5px;
+  }
+  
+.timeline-content {
+    font-size: 1em;
+    color: #222;
+    line-height: 1.8;
+  }
+.sections {
+    padding: 40px 20px;
+    background-color: #fff;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+#gallery h1 {
+    color: #388e3c;
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* عرض 250px كحد أدنى */
+    gap: 16px;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;  /* الحفاظ على النسبة الأصلية للصور */
+    border-radius: 8px;
+    object-fit: cover; /* تغطية المساحة بدون تشويه الصورة */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.gallery img:hover {
+    transform: scale(1.05); /* تكبير الصورة عند التمرير */
+}
