@@ -162,6 +162,11 @@ thead {
     text-align: center;
 }
 
+img {
+  -webkit-user-drag: none;
+  user-drag: none;
+}
+
 .gallery {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); 
